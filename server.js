@@ -9,7 +9,7 @@ app.use(express.json()); // Parse JSON bodies
 app.use(cors()); // Allow cross-origin requests
 
 // Environment variable for the reCAPTCHA secret key
-const secretKey = 6LcFT8EqAAAAALQH2oMaxEJ26DdzSxZ8kKjyILNa;
+const secretKey = "6LcFT8EqAAAAALQH2oMaxEJ26DdzSxZ8kKjyILNa";
 
 app.post("/validate-recaptcha", async (req, res) => {
     const token = req.body.token; // Token sent from the frontend
